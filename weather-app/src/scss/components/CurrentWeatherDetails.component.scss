@@ -1,0 +1,25 @@
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 30px 10px;
+    padding: 10px;
+    &__date {
+        font-size: 16px;
+    }
+    &__temp {
+        font-size: 54px;
+        color: #eb6e4b;
+    }
+    &__main {
+        font-size: 34px;
+    }
+    &_humidity {
+        font-size: 9px;
+    }
+    .weather-icon {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}

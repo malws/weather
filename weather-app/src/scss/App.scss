@@ -1,0 +1,69 @@
+@import './components/CurrentWeatherDetails.component.scss';
+@import './components/WeatherDetails.component.scss';
+@import './components/WeatherStats.component.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    padding: 25px;
+    color: #48484a;
+}
+
+.search-form {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    &__input {
+        display: block;
+        overflow: hidden;
+        input {
+            outline: none !important;
+            font-size: 16px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #48484a;
+            border-radius: 20px 0 0 20px;
+            padding: 15px;
+        }
+    }
+    &__button {
+        background-color: #48484a;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        color: #f2f2f2;
+        font-size: 16px;
+        padding: 0 20px;
+        float: right;
+        height: 40px;
+        cursor: pointer;
+        &:hover {
+            background-color: #606061;
+        }
+    }
+}
+
+.loader {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.weather {
+    text-align: center;
+    &__city {
+        margin-bottom: 0;
+    }
+    &__daily {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.error {
+    margin-top: 30px;
+    text-align: center;
+    color: #eb6e4b;
+}

@@ -1,0 +1,28 @@
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    &:not(:last-child) {
+        border-right: 1px solid #48484a;
+    }
+    &__date {
+        font-size: 12px;
+    }
+    &__temp {
+        font-size: 22px;
+    }
+    &__minor {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .weather-icon {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
